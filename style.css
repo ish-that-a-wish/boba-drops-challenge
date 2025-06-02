@@ -9,7 +9,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    height: 120vh;
+    height: 180vh;
     font-size: 18px;
 }
 
@@ -22,6 +22,13 @@ h1 {
     text-transform: uppercase;
     padding: 10px;
     font-size: 5em;
+    /* Added animation */
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
 }
 
 .boba-container {
@@ -31,13 +38,15 @@ h1 {
     padding: 40px 20px;
 }
 
+/* Changed to grid layout */
 .boba-options {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     justify-content: center;
     max-width: 1200px;
     margin-top: 30px;
+    width: 100%;
 }
 
 .boba-info {
@@ -48,13 +57,14 @@ h1 {
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Container aspect */
+    container-type: inline-size;
 }
  
 .boba-info:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 20px r
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 img {
     width: 30%;
@@ -85,4 +95,16 @@ img {
     text-decoration: none;
     font-size: 1.2em;
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Media query for responsive change */
+@media (max-width: 768px) {
+    .boba-options {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+    }
+    
+    h1 {
+        font-size: 3em; /* Smaller text on mobile */
+        letter-spacing: 5px; /* Reduced spacing */
+    }
 }
