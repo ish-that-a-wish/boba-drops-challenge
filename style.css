@@ -9,7 +9,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    height: 200vh;
+    height: 120vh;
     font-size: 18px;
 }
 
@@ -60,4 +60,29 @@ img {
     width: 30%;
     height: auto;
     border-radius: 20px 20px 0 0;
+}
+
+.specific-boba-info {
+    background: linear-gradient(to bottom right, #ffaed6, #e7bed9);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.specific-boba-info:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.back-link {
+    display: inline-block;
+    background-color: #b23272; /* Dark purple background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
