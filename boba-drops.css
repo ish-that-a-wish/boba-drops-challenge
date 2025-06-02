@@ -1,0 +1,63 @@
+body {
+    background-image: 
+        linear-gradient(to bottom, rgba(248, 187, 216, 0.9), rgba(220,143,244,0.9)),
+        url('https://media.istockphoto.com/id/1256532152/vector/bubble-tea-seamless-pattern-vector-illustration-boba-pattern-on-chocolate-color-background.jpg?s=612x612&w=0&k=20&c=RHt0mkpXmerIqpHM_Fwujv_JYQcTA2MjRHvlTFUFxxc=');
+    background-blend-mode: lighten;
+    font-family: 'Sniglet', "cursive";
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 200vh;
+    font-size: 18px;
+}
+
+h1 {
+    color: #b23272; /* Dark purple text */
+    margin-bottom: 20px;
+    font-family: 'Sniglet', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 5em;
+}
+
+.boba-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.boba-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.boba-info {
+    width: 280px;
+    background: linear-gradient(to bottom right, #ffaec9, #e7bedf);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boba-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px r
+}
+
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
